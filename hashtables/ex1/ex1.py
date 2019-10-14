@@ -14,7 +14,7 @@ def get_indices_of_item_weights(weights, length, limit):
     """
 
     for key, value in enumerate(weights):
-        hash_table_insert(ht, key, value)
+        hash_table_insert(ht, value, key)
 
     for key, value in enumerate(weights):
         if hash_table_retrieve(ht, limit - value) is not None:
